@@ -7,59 +7,48 @@
 </head>
 <body>
     <script>
-        // To print even 
-        // var num =50;
-        // for(var i=1; i<=50; i++){
-        //     if(i%2==0){
-        //         console.log(i);
+
+        const indianNames = [
+  "Aarav","Vivaan","Ishaan","Aditya","Krishna","Rohan",
+  "Karan","Aryan", "Rahul","Dev","Ananya","Diya","Isha",
+  "Aditi","Priya","Sneha","Kavya","Meera","Riya","Nisha"
+];
+//--------------------------------------------------------------------
+
+const new_names= indianNames.filter(
+    // function (n){
+    //     const firstChar=n[0];
+    //     if(firstChar=="A"){
+    //         return true;
+    //     }
+    //     else{
+    //         return false;
+    //     }
+    // }
+
+//---------------------------------------------------------------------------------    
+
+    function(n){
+        return n.length>=5;
+    }
+)
+console.log(indianNames);
+console.log(new_names)
+
+//-------------------------------------------------------------------------------------------
+        // const names=['miHir', 'RamESh'];
+        // const new_names=names.map(
+        //     function(n){
+        //         const firstChar= n[0].toUpperCase();
+        //         const restChar = n.slice(1).toLowerCase();
+        //         return firstChar+restChar;
         //     }
-        // }
-
-        // To Print square
-        // var num =20;
-        // for(var i=1; i<=20; i++){
-        //     console.log(i*i);
-        // }
-
-        //  var sum=0;
-        // for(var i=1; i<=10; i++){
-        //      sum+=i;
-        // }
-        // console.log(sum)
-
-        //  var num =100;
-        // for(var i=1; i<=num; i++){
-        //      if(i%3==0 && i%5==0){
-        //         console.log(i);
-        //      }
-        // }
-
-        
-        // var num =100;
-        // var evensum=0;
-        // var oddsum=0;
-        // for(var i=1; i<=num; i++){
-        //     if(i%2==0 ){
-        //         evensum+=i;
-        //     }
-        //     else{
-        //         oddsum+=i;
-        //     }
-        // }
-        // console.log('The even sum is ' + evensum);
-        // console.log('The odd sum is '  + oddsum);
-        
-
-        var num=8;
-        var fact=1;
-        for(var i=1; i<=num; i++){
-             fact*=i;
-        }
-        console.log(fact);
+        // )
+        // console.log(names);
+        // console.log(new_names)
 
 
-
-
+//---------------------------------------------------------------------------------------------
     </script>
 </body>
 </html>
