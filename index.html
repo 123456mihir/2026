@@ -7,24 +7,77 @@
 </head>
 <body>
     <script>
-        // var num =10;
-        // // Program -1
-        // for(var i=1; i<=num; i++){
-        //     if(i%2==0){
-        //         console.log(i +' is even ')
-        //     }
-        //     else{
-        //         console.log(i +' is odd')
+
+        // find the repeating number
+        // var num=[1,2,3,4,3,5,6];
+        // var count=0;
+        // for(var i=1; i<=num.length; i++){
+        //     for(var j=i+1; j<=num.length; j++){
+        //         if(num[i]==num[j]){
+        //             console.log(num[i]);
+        //         }
         //     }
         // }
 
 
-        // for(var i=1; i<=10; i++){
-        //     console.log(i);
+        // second method
+        // var num=[1,2,3,2,4,5];
+        // var sum=0;
+        // var sum1=0;
+        // for(var i=1; i<=num.length-1; i++){
+        //     sum+=i;
         // }
-        for(var i=10; i>=1; i--){
-            console.log(i);
+        //     console.log(sum);
+        
+        // for(var j=0; j<num.length; j++){
+        //     sum1+=num[j];
+        // }
+        //     console.log(sum1);
+        
+        //  var result= sum1-sum;
+        //  console.log(result)
+
+
+
+
+        // push and pop in array
+
+        // var arr= ['Mihr','Neha','Rahul','raman'];
+        // console.log(arr);
+
+        // arr.push('Mihirq');
+        // console.log(arr);
+        
+        
+        // Reverse the array using push 
+
+        // var num=[1,2,3,4,5,6,7,8,9,10];
+
+        // var rev_num=[];
+
+        // for(var i=num.length-1; i>=0; i--){
+        //     rev_num.push(num[i])
+        // }
+        // console.log(num);
+        // console.log(rev_num);
+
+
+        var num=[1,2,3,4,5,6,7,8,9,10];
+
+        var even_arr=[];
+        var odd_arr=[];
+
+        for(var i=0; i<num.length; i++){
+            if(num[i]%2==0){
+                even_arr.push(num[i]);
+            }
+            else{
+                odd_arr.push(num[i]);
+            }
         }
+        console.log(even_arr);
+        console.log(odd_arr);
+
     </script>
 </body>
 </html>
